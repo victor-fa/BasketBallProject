@@ -1,0 +1,116 @@
+@import "../../common/style/mixin.scss";
+
+.m-select {
+  $height: 38px;
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  outline: 0;
+  user-select: none;
+  &:active,
+  &:focus {
+    outline: 0;
+    border: none;
+  }
+  .select-selection {
+    display: block;
+    padding: 0 11px;
+    position: relative;
+    line-height: $height;
+    box-sizing: border-box;
+    display: block;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: pointer;
+    &:hover {
+      border-color: $primary-color;
+    }
+    .select-value {
+      display: block;
+      height: $height;
+      line-height: $height;
+      @include txtOverHidden($width: 100%);
+      &.placeholder {
+        color: #aaa;
+      }
+    }
+    .select-arrow {
+      position: absolute;
+      right: 7px;
+      line-height: 10px;
+      top: 13px;
+      color: #ccc;
+      transition: transform 0.3s;
+    }
+  }
+  &.m-select-open {
+    .select-selection {
+      box-shadow: 0 0 0 2px fade($primary-color, 15%);
+      border-color: $primary-color;
+    }
+    .select-arrow {
+      transform: rotate(180deg);
+    }
+    .m-select-dropdown {
+      display: block;
+    }
+  }
+}
+.m-select-dropdown {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  line-height: 1.5;
+  border-radius: 4px;
+  transition: all 0.3s;
+  .nodata {
+    padding: 2px 10px;
+    background: #fafafa;
+    color: #bbb;
+  }
+  .add-box {
+    background: #fff;
+    border-top: 1px solid #f2f2f2;
+    line-height: 2.6;
+    padding: 0 10px;
+    color: $primary-color;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      background: #fafafa;
+    }
+  }
+  .option-list {
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fff;
+    line-height: 2.2;
+    cursor: pointer;
+    li {
+      display: block;
+      padding: 0 10px;
+      &.disabled {
+        color: #bbb;
+        &:hover {
+          background: #fff;
+          cursor: url(../../common/img/disabled.png), auto;
+        }
+      }
+      &.active {
+        background: #fafafa;
+      }
+      &:hover {
+        background: fade($primary-color, 5%)
+      }
+    }
+  }
+}

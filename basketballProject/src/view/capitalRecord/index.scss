@@ -1,0 +1,29 @@
+@import '../../common/style/mixin.scss';
+
+.p-statistics {
+  .m-search-wrap {
+    min-width: 1160px;
+  }
+}
+
+.m-statistics-list {
+  @include clearfix;
+  margin: 0;
+  li {
+    float: left;
+    display: block;
+    margin: 0px 5px 15px 12px;
+    width: 160px;
+    height: 80px;
+    background: #f1f2f5;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    color: #999;
+    p {
+      font-size: 24px;
+      line-height: 1.6;
+      margin-top: 5px;
+      color: #555;
+    }
+  }
+}

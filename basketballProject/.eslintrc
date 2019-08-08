@@ -1,0 +1,7 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "no-restricted-globals": 0,
+    "react/no-direct-mutation-state": 0
+  }
+}

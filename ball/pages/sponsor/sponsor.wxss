@@ -1,0 +1,48 @@
+/* pages/sponsor/sponsor.wxss */
+
+.wawawa{
+  height:14rpx;
+  width:60%;
+  background:linear-gradient(90deg, #FFD575 0%, #FF7171 100%);
+  position:absolute;
+  top:0;
+  border-radius: 7rpx;
+   /* animation:mymove 3s;
+	animation-fill-mode:forwards;  */
+
+	/* Safari 和 Chrome */
+	 /* -webkit-animation:mymove 3s;
+	-webkit-animation-fill-mode:forwards;  */
+}
+
+.pt-font {
+  font-size:32rpx;color:#393945;font-weight: 600;
+}
+.wawawa{
+  height:14rpx;
+  width:60%;
+  background:linear-gradient(90deg, #FFD575 0%, #FF7171 100%);
+  position:absolute;
+  top:0;
+  border-radius: 7rpx;
+   /* animation:mymove 3s;
+	animation-fill-mode:forwards;  */
+
+	/* Safari 和 Chrome */
+	 /* -webkit-animation:mymove 3s;
+	-webkit-animation-fill-mode:forwards;  */
+}
+.wawa{
+  height:14rpx;
+  width:60%;
+  background:linear-gradient(90deg, #00E8FF 0%, #11CC8F 100%);
+  position:absolute;
+  top:0;
+  border-radius: 7rpx;
+   /* animation:mymove 3s;
+	animation-fill-mode:forwards;  */
+
+	/* Safari 和 Chrome */
+	 /* -webkit-animation:mymove 3s;
+	-webkit-animation-fill-mode:forwards;  */
+}

@@ -1,0 +1,20 @@
+.p-table-authlist {
+  margin: 30px 0 40px 50px;
+  width: 900px;
+  th {
+    background: #f1f1f5;
+  }
+  th,td {
+    padding: 6px 10px;
+    min-height: 30px;
+  }
+  tr {
+    border: 1px solid #e6e6e6;
+  }
+  .ant-checkbox-wrapper {
+    margin: 6px 12px;
+    .ant-checkbox + span {
+      vertical-align: -1px;
+    }
+  }
+}

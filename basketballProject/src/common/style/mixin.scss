@@ -1,0 +1,57 @@
+@mixin set_icon($url, $width: 20px, $height: 20px, $marginR: 8px) {
+    display: inline-block;
+    width: $width;
+    height: $height;
+    margin-right: $marginR;
+    vertical-align: text-top;
+    background: $url no-repeat;
+}
+
+@mixin txtOverHidden($width: 50%) {
+    width: $width;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin clearfix {
+    &::after {
+        display: block;
+        clear: both;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+        content: '.';
+    }
+}
+
+@mixin notSelectText {
+    user-select: none;
+}
+
+@mixin txtOverHidden2($clamp: 2){
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $clamp;
+    overflow: hidden;
+}
+
+$text-color: #169BD5;
+$text-hover: rgb(71, 183, 231);
+$primary-color: #03b4c8;
+$primary-hover: #0bbed2;
+$primary-light: #54d4e2;
+$background-color: #f3f3f3;
+$red: rgb(230, 90, 90);
+$red-hover: rgb(240, 101, 101);
+$red-text: rgb(212, 44, 44);
+$blue: #03b4c8;
+$blue-hover: #0bbed2;
+$blue-text: rgb(59, 127, 216);
+$gray: rgb(189, 189, 189);
+$gray-hover: rgb(199, 199, 199);
+$green: #18bd5b;
+$orange: #fbc91a;
+$purple: #bd19ff;
+
+$pagewrapPadding: 12px;

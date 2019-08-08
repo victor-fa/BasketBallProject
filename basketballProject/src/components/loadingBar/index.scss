@@ -1,0 +1,26 @@
+.loading-bar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    opacity: 1;
+    background-color: #98daf9;
+    animation: a1 1s;
+    &.show {
+        display: block;
+    }
+}
+
+@keyframes a1 {
+    0% {
+        width: 0%;
+    }
+    60% {
+        width: 100%;
+    }
+    100% {
+        opacity: 0
+    }
+}

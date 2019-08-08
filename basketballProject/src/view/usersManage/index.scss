@@ -1,0 +1,29 @@
+@import '../../common/style/mixin.scss';
+
+.p-user-detail {
+  .photo {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .orderInfo {
+    float: right;
+    color: $primary-color;
+    font-size: 15px;
+    span {
+      display: inline-block;
+      margin-left: 15px;
+    }
+  }
+  .m-table-wrap {
+    width: 1000px;
+    padding-bottom: 50px;
+    .m-title-m {
+      padding: 20px 0 10px 16px;
+    }
+    .ant-table-wrapper {
+      margin-left: 15px;
+    }
+  }
+}

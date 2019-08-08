@@ -1,0 +1,65 @@
+@import '../../common/style/mixin.scss';
+ 
+.p-sponsorDetail-wrap {
+  .m-top-title {
+    margin-bottom: -5px;
+  }
+  .sponsorDetail-tit {
+    font-size: 18px;
+    color: $primary-color;
+    padding: 10px 0 10px 10px;
+  }
+}
+.p-sponsorDetail {
+  @include clearfix;
+  height: calc(100vh - 100px);
+  min-width: 1300px;
+  overflow: hidden;
+  .sponsorDetail {
+    float: left;
+    width: 260px;
+    height: 100%;;
+    border-right: 3px solid $background-color;
+    .list {
+      font-size: 14px;
+      color: #666;
+    }
+    .item {
+      padding: 5px 0;
+    }
+    .label {
+      display: inline-block;
+      text-align: right;
+      width: 70px;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+  }
+  .userList {
+    float: left;
+    width: 1000px;
+    .m-table-wrap {
+      width: 900px;
+      .btn-text {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.sponsorDetail-return {
+  line-height: 40px;
+  .item-box {
+    margin-bottom: 3px;
+    .halfBox {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+  .label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    font-size: 16px;
+  }
+}

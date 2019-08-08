@@ -1,0 +1,97 @@
+@import '../../common/style/mixin.scss';
+$header-h: 46px;
+.m-header {
+    color: #fff;
+    padding: 0 20px;
+    height: $header-h;
+    @include clearfix;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: $primary-color;
+    h1 {
+        display: inline-block;
+        margin: 0;
+        height: $header-h;
+        line-height: $header-h;
+        a {
+            display: block;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    .anticon {
+        svg {
+            margin-bottom: -2px;
+        }
+    }
+    .menu-fold {
+        display: inline-block;
+        font-size: 18px;
+        height: 18px;
+        width: 18px;
+        margin: 0 0 0 10px;
+        cursor: pointer;
+        &:hover {
+            color: #eee;
+        }        
+    }
+    .user-r {
+        float: right;
+        font-size: 14px;
+        height: $header-h;
+        line-height: $header-h;
+    }
+    .iconfont {
+        margin: 0 5px;
+    }
+    .icon-user {
+        font-size: 20px;
+        vertical-align: -2px;
+    }
+    .sign-out {
+        cursor: pointer;
+        margin-left:20px;
+    }
+    .nav-list {
+        display: inline-block;
+        margin: 0 20px 0 5px;
+        text-align: center;
+        width: 50px;
+        cursor: pointer;
+        position: relative;
+        &:hover {
+            .list {
+                display: block;
+            }
+        }
+        .list {
+            display: none;
+            position: absolute;
+            right:-40px;
+            top: 36px;
+            padding-top:10px;
+            width: 120px;
+            background: $primary-color;
+            a {
+                display: block;
+                font-size: 16px;
+                color: #fff;
+                border-bottom: 1px solid #09a9bb;
+                line-height: 42px;
+                &:hover, &.active {
+                    background: #0fcbe0;
+                }
+            }
+        }
+        .iconfont {
+            margin:0;
+            display: inline-block;
+            vertical-align: -2px;
+            font-size: 17px;
+        }
+    }
+}

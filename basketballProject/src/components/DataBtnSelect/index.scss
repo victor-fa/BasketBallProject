@@ -1,0 +1,18 @@
+@import '../../common/style/mixin.scss';
+
+.u-data-select {
+  .ant-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    &:active, &:hover, &:focus {
+      border: 1px solid #ddd;
+      color: #333;
+    }
+    &.act {
+      background: $primary-hover;
+      color: #fff;
+      border-top-color: $primary-hover;
+      border-bottom-color: $primary-hover;
+    }
+  }
+}

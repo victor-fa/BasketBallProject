@@ -1,0 +1,21 @@
+@import '../../common/style/mixin.scss';
+
+.m-diyselect-time {
+  .btn {
+    margin-right: 10px;
+    line-height: 30px;
+  }
+  .text-btn {
+    color: $primary-color;
+    cursor: pointer;
+    margin-left:10px;
+  }
+  .diy-text{
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 4px;
+    &.active {
+      border: 1px solid $primary-color
+    }
+  }
+}

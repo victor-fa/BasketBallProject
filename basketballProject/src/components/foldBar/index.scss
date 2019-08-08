@@ -1,0 +1,32 @@
+@import '../../common/style/mixin.scss';
+
+//向上折叠，展开(多用于折叠筛选模块)
+.fold-search-box {
+  height: 21px;
+  margin-top: -20px;
+  text-align: center;
+  border-bottom: 1px solid $background-color;
+  margin-bottom: 26px;
+}
+.btn-open-down, .btn-open-up {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding:0 20px;
+  line-height: 20px;
+  .iconfont {
+      font-size: 14px;
+  }
+}
+.btn-open-up {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 0;
+}
+.btn-open-down {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top: 0;
+  margin-top:20px;
+}

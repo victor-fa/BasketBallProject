@@ -1,0 +1,35 @@
+@import '../../common/style/mixin.scss';
+
+.breadcrumb-bar {
+  font-size: 13px;
+  line-height: 26px;
+  color: #999;
+  background: $background-color;
+  @include clearfix;
+  .anticon {
+    font-size: 15px;
+  }
+  .return-btn {
+      color: $primary-color;
+      cursor: pointer;
+      .iconfont {
+        margin-right: 2px;
+        vertical-align: -1px;
+      }
+  }
+  span, a {
+    &:after {
+        padding: 0 5px 0 8px;
+        vertical-align: 1px;
+        font-size: 12px;
+        color: #ccc;
+        content: "/\00a0";
+    }
+  }
+  .breadcrumb-box {
+    float: left;
+  }
+  & + .m-search-wrap {
+    padding-top:20px;
+  }
+}
