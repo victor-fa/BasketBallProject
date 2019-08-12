@@ -545,7 +545,7 @@ Page({
           var actualNum = ob.actualNum;
           console.log(that.data.isSponsor);
           if (ob.status == 'failed' || ob.status == 'finished' || ob.actualNum == ob.actualSize){
-            if (ob.routine_img === '' || ob.status == 'finished') { // 不是自己
+            if (ob.routine_img === '' || ob.status == 'finished' || ob.status == 'failed') { // 不是自己
               that.setData({showType: 'failed'})
             }
             if (ob.actualNum === ob.actualSize) { // 是自己的，且满人了的，什么都不展示
@@ -718,7 +718,7 @@ Page({
     }, 200)
   },
   formSubmit:function(opt){
-    var formId = opt.formId;
+    var formId = opt.detail.formId;
     var lockType = this.data.lockType;
     var that = this;
     if(!lockType){

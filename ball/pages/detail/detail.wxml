@@ -315,7 +315,7 @@
         <view wx:else>
           <button wx:if="{{info.actualNum == info.actualSize || info.status == 'failed' || info.status == 'finished'}}" class="join" style='background: #E2E6EE;box-shadow: 0 3px 5px 0 rgba(226,230,238,0.30);color:#aaaaaa;'  hover-class="other-button-hover">加入队伍</button>
           <form  wx:else bindsubmit="formSubmit" report-submit bindreset="formReset">
-            <button form-type='submit' class="join"   hover-class="other-button-hover">加入队伍</button>
+            <button form-type='submit' class="join" hover-class="other-button-hover">加入队伍</button>
           </form>
         </view>
       </view>
