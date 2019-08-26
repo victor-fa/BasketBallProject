@@ -270,7 +270,7 @@ class FundInfo extends React.Component {
       title: '支付金额',
       dataIndex: 'prepayAmt',
       width: 80,
-      render: (text, record) => record.orderClass === '包场' ? record.siteAmt : record.prepayAmt
+      render: (text, record) => record.orderClass === '包场' ? record.price : record.prepayAmt
     },
     {
       title: '结算时间',
@@ -288,7 +288,7 @@ class FundInfo extends React.Component {
       title: '结算实际收入',
       dataIndex: 'actualAmt',
       width: 120,
-      render: (text, record) => record.orderClass === '包场' ? Number(record.siteAmt) - Number(record.prepayAmt) : record.actualAmt
+      render: (text, record) => record.actualAmt
     },
   ]
 

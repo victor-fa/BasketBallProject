@@ -23,8 +23,8 @@ const CURRENT = 'www'
 
 switch (CURRENT) {
   case 'www':
-    // basicUrl = 'toys.dbajoy.com'
-    basicUrl = 'test.toys.dbajoy.com'
+    basicUrl = 'toys.dbajoy.com'
+    // basicUrl = 'test.toys.dbajoy.com'
     break;
   case 'mediahx':
     basicUrl = 'toys.mediahx.com'

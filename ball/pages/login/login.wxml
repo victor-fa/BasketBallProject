@@ -1,7 +1,7 @@
 <view style='text-align:center;padding-top:20%;'>
    <image style='width:250rpx;height:250rpx;' src="/img/logo.png"></image>
    <view style='color:#393945;font-size:36rpx;font-weight:600;padding-top:0rpx;'>
-      街头篮球
+      我是球员
    </view>
    <view style='padding-top:20%;'>
      <button  wx:if="{{type == 'wx'}}"  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" style='width:90%;border-radius:100rpx;font-size:32rpx;margin-top:20rpx;'>微信授权</button>
